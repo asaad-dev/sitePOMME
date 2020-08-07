@@ -1,0 +1,133 @@
+
+    body {
+        margin: 10px 0;
+        text-align: center;
+        /* typo taille en .em famille, propriétié raccourcie */
+        font: 0.8em "Trebuchet MS", Helvetica, sans-serif;
+        background: #cf9;
+    }
+
+    /* l'id conteneur ici il est affecté à une div de la page la notation div#conteneur est identique */
+    div#conteneur {
+        margin: 0 auto;
+        width: 770px;
+        border: 2px solid #ab4;
+        text-align: left;
+        /* en hexadécimal il existe 16 millioons de couleurs */
+        /* il existe les couleurs RGBA Red Green Blue Alpha alpha joue sur l'opacité de la couleur */
+        background: #fff;
+    }
+   
+    h1#header {
+        margin: 0;
+        height: 258px;
+        background: url(../img/apple.jpg) no-repeat left top;
+    }
+
+    h1#header a {
+        display: block;
+        width: 400px;
+        height: 70px;
+        background: url(../img/title.gif) no-repeat;
+        /*la  position de l'élément a est relative son parents */
+        position: relative;
+        left: 350px;
+        top: 15px;
+        /* indentation négative du texte afin de le masguer pour les visiteurs et de le lasiier dans le code pour les robots, ou les moteurs de recheche qui indexent le site, aciton de référencement naturel */
+        text-indent: -5000px;
+    }
+
+    ul#menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        height: 35px;
+        /* l'image de fond est répétée horizontalement */
+        background: url(../img/bg_menu.gif) repeat-x 0 -25px;
+    }
+
+    ul#menu li {
+        float: left;
+        text-align: center;
+    }
+
+    ul#menu li a {
+        display: block;
+        width: 130px;
+        line-height: 25px;
+        border-right: 2px solid #dea;
+
+        text-decoration: none;
+        line-height: 25px;
+        font-size: 1.2em;
+        /* épaisseur de typo bold = gras */
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #fff;
+    }
+
+    ul#menu li a:hover{
+        background: url(../img/bg_menu.gif) repeat-x 0 0;
+    }
+
+    div#contenu {
+        padding: 0 30px 0 100px;
+        /* on créé un espace à gauche et un espace à droite */
+        background: url(../img/bg_page.gif) no-repeat 15px 15px;
+    }
+
+    div#contenu h2 {
+        padding-left: 25px;
+        background: url(../img/little_apple.gif) no-repeat left bottom;
+        border-bottom: 1px solid #9b2;
+
+        /* interlignage */
+        color: #9b2;
+        line-height: 25px;
+        font-size: 1.4em;
+    }
+
+    div#contenu h3 {
+        margin-left: 15px;
+        padding-left: 5px;
+        border-bottom: 1px solid #9b2;
+        color: #9b2;
+        border-left: 3px solid #9b2;
+        text-decoration: none;
+    }
+
+    div#contenu h3 .lien {
+        text-decoration-line: none;
+        border: none;
+    }
+
+    div#contenu p {
+        text-align: justify;
+        text-indent: 2em;
+        line-height: 1.7em;
+    }
+
+    div#contenu blockquote {
+        border-left: 5px solid #9b2;
+        padding-left: 10px;
+    }
+    div#contenu blockquote .a-droite {
+        text-align: right;
+        color: #9b2;
+    }
+
+    div#contenu a {
+        color: #8a0;
+    }
+
+    div#contenu a:hover {
+        color: #9b2;
+    }
+
+    p#footer {
+        margin: 0;
+        padding-right: 10px;
+        line-height: 30px;
+        text-align: right;
+        color: #8a0;
+    }

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>Design</title>
+
+    <style>
+        body {
+            margin: 10px 0;
+            text-align: center;
+            /* typo taille en .em famille, propriétié raccourcie */
+            font: 0.8em "Trebuchet MS", Helvetica, sans-serif;
+            background: #cf9;
+        }
+        /* l'id conteneur ici il est affecté à une div de la page la notation div#conteneur est identique */
+        div#conteneur {
+            margin: 0 auto;
+            width: 770px;
+            border: 2px solid #ab4;
+            text-align: left;
+            /* en hexadécimal il existe 16 millioons de couleurs */
+            /* il existe les couleurs RGBA Red Green Blue Alpha alpha joue sur l'opacité de la couleur */
+            background: #fff;
+        }
+       
+        h1#header {
+            height: 258px;
+            background: url(img/apple.jpg) no-repeat left top;
+        }
+
+        h1#header a {
+            display: block;
+            width: 400px;
+            height: 70px;
+            background: url(/img/title.gif) no-repeat;
+            /*la  position de l'élément a est relative son parents */
+            position: relative;
+            left: 350px;
+            top: 15px;
+            /* indentation négative du texte afin de le masguer pour les visiteurs et de le lasiier dans le code pour les robots, ou les moteurs de recheche qui indexent le site, aciton de référencement naturel */
+            text-indent: -5000px;
+        }
+
+        ul#menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 35px;
+            /* l'image de fond est répétée horizontalement */
+            background: url(/img/bg_menu.gif) repeat-x 0 -25px;
+        }
+
+        ul#menu li {
+            float: left;
+            text-align: center;
+        }
+
+        ul#menu li a {
+            display: block;
+            width: 130px;
+            line-height: 25px;
+            border-right: 2px solid #dea;
+
+            text-decoration: none;
+            line-height: 25px;
+            font-size: 1.2em;
+            /* épaisseur de typo bold = gras */
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        ul#menu li a:hover{
+            background: url(/img/bg_menu.gif) repeat-x 0 0;
+        }
+        div#contenu {
+            padding: 0 30px 0 100px;
+            /* on créé un espace à gauche et un espace à droite */
+            background: url(/img/bg_page.gif) no-repeat 15px 15px;
+        }
+
+        div#contenu h2 {
+            padding-left: 25px;
+            background: url(img/little_apple.gif) no-repeat left bottom;
+            border-bottom: 1px solid #9b2;
+
+            /* interlignage */
+            color: #9b2;
+            line-height: 25px;
+            font-size: 1.4em;
+        }
+        div#contenu h3 {
+            margin-left: 15px;
+            padding-left: 5px;
+            border-bottom: 1px solid #9b2;
+            color: #9b2;
+            border-left: 3px solid #9b2;
+            text-decoration: none;
+        }
+        div#contenu h3 .lien {
+            text-decoration-line: none;
+            border: none;
+        }
+        div#contenu p {
+            text-align: justify;
+            text-indent: 2em;
+            line-height: 1.7em;
+        }
+        div#contenu blockquote {
+            border-left: 5px solid #9b2;
+            padding-left: 10px;
+        }
+        div#contenu blockquote .a-droite {
+            text-align: right;
+            color: #9b2;
+        }
+        div#contenu a {
+            color: #8a0;
+        }
+        div#contenu a:hover {
+            color: #9b2;
+        }
+        p#footer {
+            margin: 0;
+            padding-right: 10px;
+            line-height: 30px;
+            text-align: right;
+            color: #8a0;
+        }
+    </style>
+</head>
+<body>
+    <!-- le contenu principal >>> souvent nommé id="main" ou id="container"-->
+    <div id="conteneur">
+        <h1 id="header"><a href="#" title="Colored Design - Accueil"><span>Colored Design</span></a></h1>
+        <!-- ici la navigation  -->
+            <nav>
+                <ul id="menu" >
+                    <li><a href="#">Etape n°1</a></li>
+                    <li><a href="#">Etape n°2</a></li>
+                    <li><a href="#">Etape n°3</a></li>
+                    <li><a href="#">Etape n°4</a></li>
+                    <li><a href="#">Etape n°5</a></li>
+                </ul>
+            </nav>
+        <!-- une seconde div pour le contenu aprés l'en-tête de la page -->
+        <div id="contenu">
+            <h2>Mangez des pommes</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam voluptatum quaerat incidunt porro nesciunt vel magnam nisi repudiandae perspiciatis, officia accusamus provident ipsum facere ipsam praesentium. Quod quibusdam iusto labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas asperiores vero consequatur! </p>
+            <blockquote>
+                <p>“Si tu as une pomme, que j’ai une pomme, et que l’on échange nos pommes, nous aurons chacun une pomme. Mais si tu as une idée, que j’ai une idée et que l’on échange nos idées, nous aurons chacun deux idées.”</p>
+                <p class="a-droite">
+                    <author class="a-droite">De George Bernard Shaw</author>
+                </p>
+            </blockquote>
+            <h4><a class="lien" href="https://www.lapomme.org/" target="_blank">Bienvienue dans le site de la pomme !</a></h4>
+            Aspernatur impedit magnam a consectetur tempora repellat dolor consequatur minus eum sed perferendis atque, eveniet expedita vero reprehenderit! </p>
+            <h3>Les bonnes pommes font le bon cidre</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed enim veniam tenetur illum odio eos rem sequi atque deleniti exercitationem natus dolor placeat sunt iste blanditiis delectus veritatis, explicabo perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim obcaecati, repellat perferendis quam unde, aliquam totam aspernatur, quaerat ut sit explicabo deserunt incidunt? Suscipit quaerat ab ea repellat quia hic.</p>
+    <!-- fermeture de div contenu -->
+        </div>
+        <!-- ici le pied de page avec une id="footer" que l'on trouve encore parfois en lieu et la balise footer HTML 5-->
+        
+    <p id="footer"><small>&copy;le pied de la page</small></p>
+</div><!-- fermeture de conteneur -->
+</body>
+</html>
