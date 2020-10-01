@@ -1,0 +1,136 @@
+body {
+    box-sizing: border-box;
+    background: #CCFF99;
+    font: 0.8em "Trebuchet MS", Helvetica, sans-serif;
+
+}
+#conteneur {
+    width: 51%;
+    margin: 0 auto;
+    background: #fff;
+    border: 2px solid #ab4;
+}
+
+/* 1er flexbox */
+.header {
+    display: flex;
+    height: 258px;
+    background: url(../img/apple.jpg) no-repeat left top;
+    background-size: contain;
+}
+
+.pomme {
+    flex: 1;
+}
+
+.title {
+    background: url(../img/title.gif) no-repeat;
+    background-size: contain;
+    flex: 1;
+    margin: 30px;
+    /* background-position:  center right 30px; */
+}
+
+/* 2e flexbox */
+nav {
+    display: flex;
+    background: url(../img/bg_menu.gif) repeat-x 0 -25px;
+}
+nav a {
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    border: 2px solid #dea;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    padding-bottom: 5px;
+
+}
+nav a:hover{
+    background: url(../img/bg_menu.gif) repeat-x 0 0;
+
+}
+
+/* main // contenu */
+#contenu {
+    background: url(../img/bg_page.gif) no-repeat  15px;
+    background-position: left center;
+    padding: 0 50px 0 100px;
+}
+
+h2 {
+    padding-left: 25px;
+    background: url(../img/little_apple.gif) no-repeat left bottom;
+    border-bottom: 1px solid #9b2;
+    color: #9b2;
+    line-height: 25px;
+    font-size: 1.4em;
+}
+
+h3 {
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #9b2;
+    color: #9b2;
+    border-left: 3px solid #9b2;
+    text-decoration: none;
+}
+
+.lien {
+    text-decoration-line: none;
+    border: none;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.7em;
+}
+
+blockquote {
+    border-left: 5px solid #9b2;
+    padding-left: 10px;
+}
+.a-droite {
+    text-align: right;
+    color: #9b2;
+}
+
+#contenu a {
+    color: #8a0;
+}
+
+#contenu a:hover {
+    color: #9b2;
+}
+
+#footer {
+    margin: 0;
+    padding-right: 10px;
+    line-height: 30px;
+    text-align: right;
+    color: #8a0;
+}
+
+@media (max-width: 600px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        /* height: auto; */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        background: none;
+    }
+    nav a {
+        background: #94DB36;
+        color: #fff;
+        margin: auto;
+        margin-top: 0;
+
+    }
+}
